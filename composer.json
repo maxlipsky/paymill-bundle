@@ -1,5 +1,5 @@
 {
-    "name": "memeoirs/paymill-bundle",
+    "name": "maxlipsky/paymill-bundle",
     "type": "symfony-bundle",
     "description": "Paymill payments for Symfony apps",
     "keywords": ["payment", "paymill"],
