@@ -4,6 +4,7 @@ namespace Memeoirs\PaymillBundle\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Helper\Table;
 
 abstract class ListCommand extends ApiCommand
 {
@@ -31,7 +32,7 @@ abstract class ListCommand extends ApiCommand
             return;
         }
 
-        $table = $this->getHelperSet()->get('table');
+        $table = new Table($output);
         foreach ($results as $item) {
             $this->formatRow($item, $table);
         }
